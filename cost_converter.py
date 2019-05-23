@@ -26,7 +26,10 @@ def cost_converter(codeInput):
                         cost += codex[letter.upper()]
             except KeyError:
                 return f"{letter} is incorrect"
-            totalCost += int(cost)
+            try:
+                totalCost += int(cost)
+            except:
+                return "Something went wrong."
         return totalCost
     else:
         cost = ""

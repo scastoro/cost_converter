@@ -18,5 +18,4 @@ while True:  # Event Loop
         converted = cost_converter(values['_IN_'])
         window.Element('_OUTPUT_').Update(value=converted)
 
-
 window.Close()
